@@ -1,0 +1,336 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+   
+     
+  
+  }
+  
+ 
+  .bg {
+    background: url('fod.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  
+.home{
+    min-height: 100vh;
+     background-blend-mode:darken;
+     background-size: cover;
+     background-repeat: no-repeat;
+  }
+  .fill{
+     height:200px;
+     background-color:rgba(0, 0, 0, 0.836);
+     padding:20px;
+     text-align: center;
+     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-bottom:2px solid #CDA45E;
+  opacity: 0;
+  animation: slideup 1s ease-in-out forwards;
+ }
+ 
+ @keyframes slideup {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+ }
+   
+     
+   .nav-link{
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     gap: 40px;
+     opacity: 0;
+     animation: slideup 1s ease-in-out forwards;
+    }
+    
+    @keyframes slideup {
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+    }
+   
+   .nav-link a {
+     position: relative;
+     text-decoration: none;
+     color:#7e7667;
+     font-size:18px;
+     font-weight: 500;
+     padding-bottom:7px;
+     transition: color 0.3s ease;
+   }
+   
+   /* Underline fill animation */
+   .nav-link a::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     height: 2px;
+     width: 0%;
+     background-color: #CDA45E;
+     transition: width 0.3s ease;
+   }
+   
+   .nav-link a:hover::after {
+     width: 100%;
+   }
+   
+   .nav-link a:hover {
+     color: #CDA45E;
+   }
+   
+  
+   .animated-text {
+  
+  
+     opacity: 0;
+     transform: translateY(-20px);
+  }
+  /* Review Section */
+  .review-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    animation: slideup 1s ease-in-out forwards;
+   }
+   
+   @keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+   }
+   /* Style the input field for the username */
+input[type="text"][name="username"] {
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0 below ;
+    border: 2px solid #ccc;  
+    border-radius: 5px; 
+    font-size: 16px; 
+    background-color: #f9f9f9;  
+    color: #333;  
+    transition: all 0.3s ease;  
+}
+
+/* Focus state */
+input[type="text"][name="username"]:focus {
+    border-color: #111112; 
+    outline: none;  
+    background-color: #eaf1ff;  
+}
+
+/* Placeholder styling */
+input[type="text"][name="username"]::placeholder {
+    color: #888; /* Sets a gray color for placeholder text */
+    font-style: italic; /* Makes the placeholder text italic */
+}
+
+  
+  .title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color:rgba(0, 0, 0, 0.884);
+    font-weight: 700;
+  }
+  
+  /* Review Form */
+  .review-form {
+    margin-bottom: 40px;
+  }
+  
+  .review-form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.952);
+    resize: none;
+    margin-bottom: 15px;
+  }
+  
+  .submit-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    background-color:rgba(0, 0, 0, 0.842);
+    color: #CDA45E;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #555;
+  }
+  
+  /* Review Cards */
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .review-card {
+    background: #CDA45E;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+  }
+  
+  .review-card h3 {
+    margin-bottom: 10px;
+    color:rgba(0, 0, 0, 0.938);
+  }
+  
+  .review-card p {
+    color:rgba(0, 0, 0, 0.932);
+  }
+  
+  .review-card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+   
+   
+   @keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+   }/* Footer main box */
+footer {
+  background-color: #000000e6;   /* black with slight opacity */
+  color: #CDA45E;                /* golden text */
+  padding: 50px 20px;
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid system for footer */
+.footer_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+/* Footer headings */
+.footer_tag h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #fff;      /* white for contrast */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Paragraphs inside footer */
+.footer_tag p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Footer links */
+footer a {
+  color: #CDA45E;           /* golden color */
+  text-decoration: none;    /* remove underline */
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;              /* white on hover */
+  text-decoration: underline;
+}
+
+/* Social icons */
+ion-icon {
+  font-size: 28px;
+  margin: 0 10px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: 0.3s ease;
+}
+
+/* Hover colors for brand feel */
+a[href*="facebook"]:hover ion-icon {
+  color: #CDA45E;   /* Facebook blue */
+}
+a[href*="instagram"]:hover ion-icon {
+  color:#CDA45E;   /* Instagram pink */
+}
+a[href*="mailto"]:hover ion-icon {
+  color: #CDA45E;   /* Gmail red */
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .footer_main {
+    grid-template-columns: 1fr; /* stack vertically on small screens */
+    text-align: center;
+  }
+}
+
+   /* Rating System */
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.rating .star {
+    font-size: 30px;
+    color: #272626;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating input[type="radio"]:checked ~ .star {
+    color: gold; /* Gold when selected */
+}
+
+.review-rating {
+    font-size: 18px;
+    color: #CDA45E;
+    margin-top: 10px;
+}
+/* Style the stars */
+.star {
+    color: gold; /* Set the color to gold for the stars */
+    font-size: 20px; /* Adjust the size of the stars */
+    margin-right: 5px; /* Space between the stars */
+}
+
+.review-rating {
+    margin-top: 10px;
+}

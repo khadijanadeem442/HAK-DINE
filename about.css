@@ -1,0 +1,208 @@
+
+body {
+  background-color: #2c1706dc;
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.home{
+ 
+  background-blend-mode:darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fade-In {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+ 
+
+
+/* About Section Styling */
+.about {
+    
+    padding: 80px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .about_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Image Animation */
+  .image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideLeft 1.2s ease forwards;
+  }
+  
+  /* Text Animation */
+  .about_text {
+    max-width: 600px;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideRight 1.2s ease forwards;
+  }
+  
+  .about_text h1 {
+    font-size: 40px;
+    color: whitesmoke;
+    margin-bottom: 15px;
+  }
+  
+  .about_text h1 span {
+    color: #CDA45E;
+  }
+  
+  .about_text h3 {
+    font-size: 24px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+  }
+  
+  .about_text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color:whitesmoke;
+  }
+  
+  /* Animations */
+  @keyframes slideLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about_main {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image img {
+      animation: slideUp 1s ease forwards;
+    }
+  
+    .about_text {
+      animation: slideUp 1s ease forwards;
+    }
+  
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+  
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+    }
+  }
+
+/*Footer*/
+/* ===== Footer Styling ===== */
+footer {
+  background-color: #000000e6;   /* Black with slight opacity */
+  color: #CDA45E;                /* Golden text */
+  padding: 50px 20px;
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid Layout */
+.footer_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+/* Section Headings */
+.footer_tag h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #fff;              /* White headings */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Footer Text */
+.footer_tag p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Links Styling */
+footer a {
+  color: #CDA45E;           /* Golden links */
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;              /* White on hover */
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+ion-icon {
+  font-size: 28px;
+  margin: 0 10px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: 0.3s ease;
+}
+
+/* Hover Brand Colors */
+a[href*="facebook"]:hover ion-icon {
+  color: black;   /* Facebook Blue */
+}
+a[href*="instagram"]:hover ion-icon {
+  color: black;   /* Instagram Pink */
+}
+a[href*="mailto"]:hover ion-icon {
+  color:black;   /* Gmail Red */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer_main {
+    grid-template-columns: 1fr;  /* Stack vertically on small screens */
+    text-align: center;
+  }
+}
+
