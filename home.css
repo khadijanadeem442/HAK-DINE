@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+
+}
+body{
+   background-color:#2c1706dc;
+   background-size: cover;
+background-repeat: no-repeat;
+
+width: 100%;
+height: 100vh;
+}
+
+.home{
+ 
+    background-blend-mode:darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fade-In {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .profile-button:hover {
+    background-color: #555;
+  }
+ 
+ 
+.banner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 65px;
+        background-image: url(Home.png);
+        opacity: 0.6;
+        background-repeat: no-repeat;
+        background-size: cover;
+          }
+          .fade-In {
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    .left h1{
+        color: aliceblue;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        border: 1px solid #CDA45E;
+        padding: 20px;
+        font-size: 30px;
+    }
+    .left h1 span{
+       color: #CDA45E;
+       font-size: 35px;
+       font-family:mv boli ;
+       font-weight: 600;
+    }
+    .left h2{
+        color: #f7f6f4;
+        font-family:mv boli ;
+        font-weight: 200;
+    }
+    
+ 
+.fade-In {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.circle-slider {
+    border: 4px solid #CDA45E;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.circle-slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5fffffccccccccccccccccccs ease-in-out;
+}
+
+.circle-slider img.active {
+ opacity:0.5;
+   }
+   s
+
+.team{
+    width: 100%;
+    height: 700px;
+    background-color: #9b6941dc;
+    
+    margin-top: 0%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ 
+.team h1{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team h1 span{
+    color:  #CDA45E;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.team h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #CDA45E;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.team .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13%;
+    opacity: 0;
+    animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team .team_box .profile{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: 0.4s;
+    opacity: 0;
+    animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team .team_box .profile:hover{
+    border-radius: 20px;
+    height: 320px;
+}
+
+.team .team_box .profile img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: 0.4s;
+    opacity: 0;
+    animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team .team_box .profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+    opacity: 0;
+    animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team .team_box .profile:hover .info{
+    top: 60%;
+}
+
+.team .team_box .profile .info .name{
+    color:  #CDA45E;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team .team_box .profile .info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    color: #f7f6f4;
+    opacity: 0;
+    animation: slideup 1s ease-in-out forwards;
+}
+
+@keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.team .team_box .profile .info .team_icon i{
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.team .team_box .profile .info .team_icon i:hover{
+    color:  #CDA45E;
+}
+ 
+
+/*Footer*/
+ 
