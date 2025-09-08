@@ -1,0 +1,26 @@
+
+.payment-div {
+    display: none;
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+  }
+
+  .payment-option {
+    margin: 10px 0;
+  }
+
+  .submit-btn {
+    background-color: #CDA45E;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .submit-btn:hover {
+    background-color:transparent; /* Hover background color */
+    color: #ffffff; /* Text color on hover */
+  }

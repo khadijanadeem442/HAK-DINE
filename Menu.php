@@ -211,14 +211,14 @@ placeOrderBtn?.addEventListener("click", ()=> {
         
          <div class="video-container">
              <video autoplay loop muted playsinline class="background-video">
-                 <source src="home.mp4" type="video/mp4">
+                 <source src="desi.mp4" type="video/mp4">
              </video>
          </div>
       
          <section class="menu-header">
-             <img src="12.jpg" alt="Food Icon" class="food-icon">
+             <img src="image/karachi-biryani-25.jpg" alt="Food Icon" class="food-icon">
              <h1>Menu</h1>
-             <p>Choose from a variety of mouth-watering dishes</p>
+             <p>Discover over yummy menu</p>
          </section>
      
           <div class="menu-categories">
@@ -248,7 +248,8 @@ placeOrderBtn?.addEventListener("click", ()=> {
 <!-- Menu Items from DB -->
 <div class="container">
 <?php
-$sql = "SELECT * FROM menu_items";
+ $sql = "SELECT * FROM menu_items WHERE category='Menu'";
+;
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_assoc($result)){
     echo '<div class="food-box">
