@@ -218,7 +218,7 @@ placeOrderBtn?.addEventListener("click", ()=> {
          <section class="menu-header">
              <img src="image/chow mein.jpg" alt="Food Icon" class="food-icon">
              <h1>Chinese</h1>
-             <p>Choose from a variety of mouth-watering dishes</p>
+           <p>Discover over yummy menu</p>
          </section>
      
           <div class="menu-categories">
@@ -264,3 +264,4 @@ while($row = mysqli_fetch_assoc($result)){
 </section>
 </body>
 </html>
+
