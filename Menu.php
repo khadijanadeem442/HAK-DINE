@@ -63,12 +63,16 @@ $isLoggedIn = isset($_SESSION['email']);
             <!-- ✅ Add QR code image here -->
             <img src="QR.jpg" alt="EasyPaisa QR Code" style="width:200px; display:block; margin-bottom:10px;">
             
-            <form action="order_success.php" method="POST" onsubmit="return prepareOrder();">
-                <input type="hidden" name="total_price" id="total_price_input">
-                <input type="hidden" name="payment_method" value="EasyPaisa">
-                <input type="hidden" name="items_data" id="items_data">
-                <input type="submit" value="Confirm Payment" class="submit-btn">
-            </form>
+         <form action="order_success.php" method="POST" onsubmit="return prepareOrder();">
+    <input type="hidden" name="total_price" id="total_price_input">
+    <input type="hidden" name="payment_method" value="EasyPaisa">
+    <input type="hidden" name="items_data" id="items_data">
+
+    <button type="submit" class="btn-buy">Confirm Order</button>
+</form>
+
+</form>
+
         </div>
     </div>
 <?php else: ?>
