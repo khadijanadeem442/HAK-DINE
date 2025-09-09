@@ -218,7 +218,7 @@ placeOrderBtn?.addEventListener("click", ()=> {
          <section class="menu-header">
              <img src="image/Chai3.jpg" alt="Food Icon" class="food-icon">
              <h1>Drinks</h1>
-             <p>Choose from a variety of mouth-watering dishes</p>
+              <p>Discover over yummy menu</p>
          </section>
      
           <div class="menu-categories">
@@ -248,7 +248,8 @@ placeOrderBtn?.addEventListener("click", ()=> {
 <!-- Menu Items from DB -->
 <div class="container">
 <?php
-$sql = "SELECT * FROM menu_items";
+$sql = "SELECT * FROM menu_items WHERE category='Drinks'";
+
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_assoc($result)){
     echo '<div class="food-box">
@@ -264,3 +265,4 @@ while($row = mysqli_fetch_assoc($result)){
 </section>
 </body>
 </html>
+
