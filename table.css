@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2c1706dc;
+}
+.home {
+  background-image: url('tablereserve.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  min-height: 100vh;
+}
+ 
+.container {
+  display: flex;
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  color: #CDA45E;
+  overflow: hidden;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+.container.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+.image-section,
+.form-section {
+  flex: 1;
+  padding: 20px;
+}
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+.form-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+input,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+input {
+  background-color: #1e1e1e;
+  color: #CDA45E;
+  border: 1px solid #555;
+}
+button {
+  background-color: #CDA45E;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 25px;
+}
+button:hover {
+  background-color: #e5b052;
+}
+#confirmation {
+  margin-top: 15px;
+  text-align: center;
+  color: #CDA45E;
+  background: #202020;
+  padding: 10px;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+footer {
+  background-color: #000000e6;   /* Black with slight opacity */
+  color: #CDA45E;                /* Golden text */
+  padding: 50px 20px;
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid Layout */
+.footer_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+/* Section Headings */
+.footer_tag h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #fff;              /* White headings */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Footer Text */
+.footer_tag p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Links Styling */
+footer a {
+  color: #CDA45E;           /* Golden links */
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;              /* White on hover */
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+ion-icon {
+  font-size: 28px;
+  margin: 0 10px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: 0.3s ease;
+}
+
+/* Hover Brand Colors */
+a[href*="facebook"]:hover ion-icon {
+  color: black;   /* Facebook Blue */
+}
+a[href*="instagram"]:hover ion-icon {
+  color: black;   /* Instagram Pink */
+}
+a[href*="mailto"]:hover ion-icon {
+  color:black;   /* Gmail Red */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer_main {
+    grid-template-columns: 1fr;  /* Stack vertically on small screens */
+    text-align: center;
+  }
+}
