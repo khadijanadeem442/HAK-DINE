@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #cda45e;  /* dark background */
+  color: #f5f5f1;  /* off-white text */
+}
+
+.home {
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+.container {
+  width: 1000px;
+  max-width: 95%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.836);  /* dark bg */
+  border: 2px solid #cda45e; /* gold border */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #cda45eaa;
+  animation: fadeInUp 1s ease forwards;
+  margin-top: 10px;}
+
+h1, h2 {
+  text-align: center;
+  color: #cda45e;  /* gold headings */
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card {
+  background-color:#cda45e;; /* slightly lighter dark */
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 4px 10px #00000080;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.card p, .card td {
+  color: #000000;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+table th {
+  background-color: #cda45e;
+  color: #1e2022;
+  font-weight: 700;
+}
+
+button {
+  background-color: #cda45e;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #1e2022;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #cda45e;
+  border: 2px solid #cda45e;
+}
+
+.logout-btn {
+  display: inline-block;
+  background-color: #cda45e;
+  color: #1e2022;
+  padding: 10px 25px;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: transparent;
+  color: #cda45e;
+  border: 2px solid #cda45e;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
