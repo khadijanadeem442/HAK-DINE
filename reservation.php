@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['reserve_table'])) {
     $stmt->close();
 
     if ($total_reservations > 0) {
-        $confirmation_message = "❌ Sorry, this date and time is already reserved.";
+        $confirmation_message = " Sorry, this date and time is already reserved.";
     } else {
         // Insert new reservation
         $sql = "INSERT INTO reservations (user_id, name, phone, reservation_date, reservation_time, guests, status) 
@@ -115,3 +115,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['reserve_table'])) {
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
