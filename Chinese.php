@@ -2,7 +2,7 @@
 session_start();
 include 'config.php';   
 
-$isLoggedIn = isset($_SESSION['email']);
+$isLoggedIn = isset($_SESSION[ 'email']);
 ?>
 
 <!DOCTYPE html>
