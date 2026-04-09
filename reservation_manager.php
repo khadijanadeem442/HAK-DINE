@@ -13,7 +13,7 @@ if (isset($_POST['update_status'])) {
     $status = isset($_POST['status']) ? $_POST['status'] : '';
 
     // Allowed statuses only
-    $allowed = ['Confirmed', 'Cancelled'];
+    $allowed = ['Confirmed', 'Cancelled'] ;
     if ($reservation_id > 0 && in_array($status, $allowed, true)) {
         $stmt = $conn->prepare("UPDATE reservations SET status = ? WHERE id = ?");
         if ($stmt) {
