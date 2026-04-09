@@ -16,7 +16,7 @@ if (isset($_GET['delete'])) {
 
 // Add Item
 if (isset($_POST['add'])) {
-    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $name = mysqli_real_escape_string ($conn, $_POST['name']);
     $price = floatval($_POST['price']);
     $category = mysqli_real_escape_string($conn, $_POST['category']);
 
