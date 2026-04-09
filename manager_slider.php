@@ -8,7 +8,7 @@ if (!is_dir($uploadDir)) mkdir($uploadDir, 0755, true);
 
 $errors = [];
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST")  {
     
     if (isset($_POST['update_banner'])) {
         $text = $conn->real_escape_string($_POST['banner_text']);
