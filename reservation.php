@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['reserve_table'])) {
             if ($stmt->execute()) {
                 $confirmation_message = "✅ Reservation successful! See you on $date at $time.";
             } else {
-                $confirmation_message = "❌ Error while reserving. Try again.";
+                $confirmation_message = " Error while reserving. Try again.";
             }
             $stmt->close();
         }
