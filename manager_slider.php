@@ -34,10 +34,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST")  {
                     $conn->query("INSERT INTO slider_items (image_url, food_name, price) 
                                   VALUES ('$newFileName', '$name', '$price')");
                 } else {
-                    $errors[] = "❌ Failed to move uploaded file.";
+                    $errors[] = " ❌Failed to move uploaded file.";
                 }
             } else {
-                $errors[] = "❌ Invalid image type. Allowed: jpg, jpeg, png, gif.";
+                $errors[] = " ❌Invalid image type. Allowed: jpg, jpeg, png, gif.";
             }
         } else {
             $errors[] = "❌ Image file is required.";
