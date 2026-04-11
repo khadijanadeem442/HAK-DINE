@@ -9,7 +9,7 @@
      <title>HAK DINE</title>
     <link rel="stylesheet" href="home.css">
       <link rel="stylesheet" href="navbar.css">
-    
+     
     
 </head>
 <body>
