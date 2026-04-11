@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->bind_result($id, $fullname, $db_password);
         $stmt->fetch();
 
-        
+         
         if ($password === $db_password) {
             $_SESSION['manager_id'] = $id;
             $_SESSION['manager_name'] = $fullname;
