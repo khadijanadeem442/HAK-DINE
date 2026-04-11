@@ -37,7 +37,7 @@ $isLoggedIn = isset($_SESSION['email']);
         </li>
     </ul>
 </nav>
-
+ 
 <!-- Cart Sidebar -->
 <div class="cart" id="cart">
     <div class="cart-header">
