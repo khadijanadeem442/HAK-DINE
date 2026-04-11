@@ -15,7 +15,7 @@ if (isset($_GET['delete'])) {
     header("Location: contact_messages.php"); // Redirect to refresh the page
     exit;
 }
-
+ 
 // Fetch messages
 $query = "SELECT * FROM contact_messages ORDER BY created_at DESC";
 $results = mysqli_query($conn, $query);
