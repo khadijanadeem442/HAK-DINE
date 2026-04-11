@@ -6,7 +6,7 @@ if (!isset($_SESSION['user_id'])) {
     header("Location: login.tml.php");
     exit;
 }
-
+ 
 if (isset($_POST['cancel_order'])) {
     $order_id = intval($_POST['order_id']);
     $user_id = intval($_SESSION['user_id']);
