@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    if (!$stmt) {
     die("Prepare failed: " . $conn->error);
 }
-
+ 
 
     $stmt->bind_param("s", $email);
     $stmt->execute();
