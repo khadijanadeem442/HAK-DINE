@@ -7,6 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 
+
 if (isset($_POST['cancel_reservation'])) {
     $reservation_id = intval($_POST['reservation_id']);
     $user_id = intval($_SESSION['user_id']);
@@ -17,6 +18,7 @@ if (isset($_POST['cancel_reservation'])) {
     $stmt->execute();
     $stmt->close();
 }
+
 
 header("Location: profile_user.php");
 exit;
